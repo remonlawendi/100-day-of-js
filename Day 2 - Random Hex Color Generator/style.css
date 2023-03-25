@@ -11,14 +11,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .generating-box {
-  width: 400px;
+  width: 350px;
   height: auto;
-  padding-block: 10px;
+  padding-block: 20px;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,8 @@ body {
   margin-block: 10px;
   font-size: 24px;
   font-weight: bold;
+  border: 1px solid #fff;
+  padding: 10px 15px;
 }
 
 .line {
@@ -62,4 +64,5 @@ body {
   -o-border-radius: 5px;
   font-weight: bold;
   font-size: 16px;
+  text-transform: capitalize;
 }
