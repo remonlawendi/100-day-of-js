@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wapper {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  font-weight: 300;
+  margin-block-start: 20px;
+}
+
+h1 span {
+  font-weight: bold;
+  margin-block: 10px;
+}
+
+.popup_fire {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+  margin-block: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.popup_fire:hover {
+  background-color: #fff;
+  border: 1px solid #8052ec;
+  color: #8052ec;
+}
+
+.modal_ {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #000000a8;
+  color: #8052ec;
+  padding: 10px 20px;
+  padding-block: 25px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal_content {
+  width: 600px;
+  /* height: 180px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  padding-inline: 25px;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  animation: slide ease 0.8s;
+  -webkit-animation: slide ease 0.8s;
+  padding-block: 25px;
+}
+
+.modal_content h3 {
+  margin-block-end: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #8052ec;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30rem);
+    -webkit-transform: translateY(-30rem);
+    -moz-transform: translateY(-30rem);
+    -ms-transform: translateY(-30rem);
+    -o-transform: translateY(-30rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+
+}
