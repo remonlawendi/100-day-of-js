@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
   const count = document.querySelector('.count')
   const buttons = document.querySelector('.counter-btn-actions')
+  
   // Event Delegation
   buttons.addEventListener('click', (e) => {
     if (e.target.classList.contains("add")) {
@@ -19,11 +20,13 @@ window.addEventListener('load', () => {
   })
 
   function style() {
+    
     if (count.innerHTML < 0) {
       count.style.color = 'red'
     }
     else
+     {
       count.style.color = '#fff'
-    )
+     }
   }
 })
